@@ -183,17 +183,37 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             首页
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="https://wangweikui.com/resume/build/index.html" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             归档
           </a>
@@ -303,7 +323,15 @@
       
         
           
-            
+            <pre><code>    Python3相比Python2有较大的改动，版主在之前没有接触过Python的情况下爬虫遇到了很多问题，
+现在就跟大家分享一下。在Python2中爬虫时候，我们通常导入urllib包就行了，但是在3中必须导入
+的是urllib.request如果你没有写.request的话，编译器将会报错。将会报错。urllib.request 模块
+提供了最基本的构造 HTTP 请求的方法，利用它可以模拟浏览器的一个请求发起过程，同时它还带有处
+理 authenticaton（授权验证），redirections（重定向），cookies (浏览器Cookies）以及其它内容。
+如果在Python3中使用的是urllib.urlopen 就是打开url网址的操作。编译器依旧会报错。因为在3中必
+须要urllib.request.urlopen这样来打开url网址。后面还要用到urlretrieve也一样，因为导入的包是
+urllib.request所以都要先在这里面调用这些函数！
+</code></pre>
           
         
       
@@ -528,7 +556,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
@@ -552,7 +580,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
