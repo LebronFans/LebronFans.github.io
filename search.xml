@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>图片测试</title>
+      <link href="/2018/08/14/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/"/>
+      <url>/2018/08/14/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/</url>
+      <content type="html"><![CDATA[<p>尝试在博文中添加图片<br><img src="图片测试/kobe.png" alt="Kobe"></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>Python3爬虫常见错误</title>
+      <link href="/2018/07/31/Python3%E7%88%AC%E8%99%AB%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/"/>
+      <url>/2018/07/31/Python3%E7%88%AC%E8%99%AB%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</url>
+      <content type="html"><![CDATA[<pre><code>    Python3相比Python2有较大的改动，版主在之前没有接触过Python的情况下爬虫遇到了很多问题，现在就跟大家分享一下。在Python2中爬虫时候，我们通常导入urllib包就行了，但是在3中必须导入的是urllib.request如果你没有写.request的话，编译器将会报错。将会报错。urllib.request 模块提供了最基本的构造 HTTP 请求的方法，利用它可以模拟浏览器的一个请求发起过程，同时它还带有处理 authenticaton（授权验证），redirections（重定向），cookies (浏览器Cookies）以及其它内容。如果在Python3中使用的是urllib.urlopen 就是打开url网址的操作。编译器依旧会报错。因为在3中必须要urllib.request.urlopen这样来打开url网址。后面还要用到urlretrieve也一样，因为导入的包是urllib.request所以都要先在这里面调用这些函数！</code></pre>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>XUST</title>
+      <link href="/2018/07/30/XUST/"/>
+      <url>/2018/07/30/XUST/</url>
+      <content type="html"><![CDATA[<p>这是我的第一篇博客 欢迎大家常来访问 范江稳是世界上最帅的男人</p>]]></content>
+      
+      <categories>
+          
+          <category> Thinking </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 试试水 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
