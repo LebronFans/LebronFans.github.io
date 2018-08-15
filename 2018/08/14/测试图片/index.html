@@ -86,12 +86,12 @@
 <meta property="og:site_name" content="A Perfect man‘s WEB">
 <meta property="og:description" content="测试加载本地照片">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/08/14/测试图片/图片测试/kobe.png">
-<meta property="og:updated_time" content="2018-08-14T16:21:58.778Z">
+<meta property="og:image" content="http://yoursite.com/2018/08/14/测试图片/images/kobe.png">
+<meta property="og:updated_time" content="2018-08-15T09:46:50.319Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试图片">
 <meta name="twitter:description" content="测试加载本地照片">
-<meta name="twitter:image" content="http://yoursite.com/2018/08/14/测试图片/图片测试/kobe.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/14/测试图片/images/kobe.png">
 
 
 
@@ -356,7 +356,7 @@
       
 
       
-        <p>测试加载本地照片<br><img src="图片测试/kobe.png" alt="Kobe"></p>
+        <p>测试加载本地照片<br><img src="./images/kobe.png" alt="Kobe"></p>
 
       
     </div>
@@ -390,6 +390,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/15/测试本地图片/" rel="prev" title="测试本地图片">
+                测试本地图片 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -461,7 +465,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -941,7 +945,7 @@
 
                   // select top N slices in content
 
-                  var upperBound = parseInt('');
+                  var upperBound = parseInt('1');
                   if (upperBound >= 0) {
                     slicesOfContent = slicesOfContent.slice(0, upperBound);
                   }
@@ -1008,7 +1012,7 @@
             }
           }
 
-          if ('auto' === '') {
+          if ('auto' === 'auto') {
             input.addEventListener('input', inputEventFunction);
           } else {
             $('.search-icon').click(inputEventFunction);
