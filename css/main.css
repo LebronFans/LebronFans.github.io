@@ -456,6 +456,7 @@ body {
   padding-bottom: 150px;
   background: url("/images/jordan.png");
   Background-attachment: fixed;
+  background-size: 1600px;
 }
 .main-inner {
   margin: 0 auto;
@@ -1271,6 +1272,7 @@ pre .javascript .function {
 }
 .posts-expand {
   padding-top: 40px;
+  opacity: 0.9;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1825,7 +1827,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aba16c;
+  background: #0688db;
 }
 .links-of-blogroll {
   font-size: 13px;
