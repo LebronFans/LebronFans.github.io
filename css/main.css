@@ -454,7 +454,7 @@ body {
 }
 .main {
   padding-bottom: 150px;
-  background: url("/images/kobe.png");
+  background: url("/images/jordan.png");
   Background-attachment: fixed;
 }
 .main-inner {
@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fe240f;
+  background: #aba16c;
 }
 .links-of-blogroll {
   font-size: 13px;
