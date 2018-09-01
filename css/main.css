@@ -454,6 +454,8 @@ body {
 }
 .main {
   padding-bottom: 150px;
+  background: url("/images/kobe.png");
+  Background-attachment: fixed;
 }
 .main-inner {
   margin: 0 auto;
@@ -1823,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #66d0d1;
+  background: #fe240f;
 }
 .links-of-blogroll {
   font-size: 13px;

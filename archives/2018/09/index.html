@@ -82,7 +82,7 @@
 <meta name="description" content="Witness History">
 <meta property="og:type" content="website">
 <meta property="og:title" content="A Perfect man‘s WEB">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2018/09/index.html">
 <meta property="og:site_name" content="A Perfect man‘s WEB">
 <meta property="og:description" content="Witness History">
 <meta property="og:locale" content="zh-Hans">
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/archives/2018/09/"/>
 
 
 
 
 
-  <title>A Perfect man‘s WEB</title>
+  <title>归档 | A Perfect man‘s WEB</title>
   
 
 
@@ -143,8 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -261,578 +260,75 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
+
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 4 篇日志。 继续努力。
+      </span>
+
       
 
-  
+        
+        
+        
 
-  
-  
-  
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2018">2018</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/01/三天打鱼。两天晒网Python版/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JiangWen Fan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/lb.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="A Perfect man‘s WEB">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/01/三天打鱼。两天晒网Python版/" itemprop="url">三天打鱼。两天晒网Python版</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2018/09/01/三天打鱼。两天晒网Python版/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">三天打鱼。两天晒网Python版</span>
               
-              <time title="发表于" itemprop="dateCreated datePublished" datetime="2018-09-01T08:08:23+08:00">
-                2018-09-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/09/01/三天打鱼。两天晒网Python版/" class="leancloud_visitors" data-flag-title="三天打鱼。两天晒网Python版">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
+            </a>
         
-          
-            <p>问题概述：中国有句俗语叫“三天打鱼两天晒网”某人从2010年1月1日起开始“三天打鱼两天晒网”，问这个人在以后的某一天中是“打鱼”还是“晒网”。</p>
-<p>整体思路如下：</p>
-<p>1）计算从2010年1月1日开始至指定日期共有多少天;</p>
-<p>2）由于“打鱼”和“晒网”的周期为5天，所以将计算出的天数用5取除;</p>
-<p>3）根据余数判断他是在“打鱼”还是在“晒网”;</p>
-<pre><code>若余数为1,2,3，则他是在“打鱼”，否则是在“晒网”
-</code></pre><p>首先，我们要判断用户输入的日期是否正确，我在程序中规定日期的格式YYYYMMDD（年月日），并且只能为8位整数。采用INT（输入（XXX）即输入只能为整数，输入字符串时会产生异常，会提醒你输入整数。通过列表（STR（日期）），将输入的数字转为数组，方便之后提取年月日。也方便求输入的长度。通过LEN（日期）判断输入是否为8位。如果输入的不够八位数或者超过时也会产生异常，当输入正确的日期后，首先会数组提取日期，即数组0-3为年，4-5位月份，6-7为日。首先根据年份判断该日期是否在2010年之后，若不是则会产生异常。注意，Python中的异常采用尝试：…除了xxxError。</p>
-<p>#输入现在的日期<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">try:  </span><br><span class="line">    Date = int(input(read()))   #获取当前日期并规定输入格式只能为整数</span><br><span class="line">    date = list(str(Date))</span><br><span class="line">   </span><br><span class="line">    try:</span><br><span class="line">        if len(date) != 8:</span><br><span class="line">            print(&quot;输入日期有误！&quot;)</span><br><span class="line">        global year</span><br><span class="line">        year = date[0] + date[1] + date[2] + date[3]</span><br><span class="line">        year = int(year)         #将获取的年份从str类型转为int类型</span><br><span class="line">        month = date[4] + date[5]</span><br><span class="line">        month = int(month)       #将获取的月份从str类型转为int类型</span><br><span class="line">        day = date[6] + date[7]</span><br><span class="line">        day = int(day)           #将获取的天数从str类型转为int类型</span><br><span class="line">        </span><br><span class="line">        if year &lt; 2010:</span><br><span class="line">            print(&quot;请输入正确的日期！&quot;)</span><br><span class="line">        sum = allDays(year,month,day)</span><br><span class="line">        judge(sum)</span><br><span class="line">        allDays(year,month,day)    </span><br><span class="line">       </span><br><span class="line">    except IndexError:      #当输入为整形时，但不是8位数时报错</span><br><span class="line">        print(&quot;请输入八位整数&quot;)</span><br><span class="line">except ValueError:     #当输入为非整型时报错</span><br><span class="line">    print(&quot;请输入整数！&quot;)</span><br></pre></td></tr></table></figure></p>
-<p>接下来到了重点了！</p>
-<p>获取到正确的输入日期信息以后就要来计算距离2010年1月1日的总天数了，为了锻炼自己的算法，和对问题分析能力。本人的程序中没有直接采用通过日期函数直接来获取并计算总天数。而是通过两部分来算，一部分是算距离2010年有多少年，闰年有366天，平年有365天，通过自定义函数runYear（）来判断是否是闰年，函数如下图所示</p>
-<p>#判断是不是闰年<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">def runYear(year):</span><br><span class="line">    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:</span><br><span class="line">        return True</span><br><span class="line">    else:</span><br><span class="line">        return False</span><br><span class="line">```           </span><br><span class="line"></span><br><span class="line">接下来算用户输入日期这一年已经过了多少天，如果是闰年2会有29天，其他情况1。5。3。7。9月有31天4.6.9.11有30天。所以首先要判断每个月有多少天然后将这些月份的总天数相加，最后加上用户输入的“天”。</span><br><span class="line"></span><br><span class="line">#判断每月有几天</span><br><span class="line"></span><br><span class="line">```def getDays(year,month):</span><br><span class="line">    days = 0</span><br><span class="line">    if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:</span><br><span class="line">        days = 31</span><br><span class="line">    elif month == 4 or month == 6 or month == 9 or month == 11:</span><br><span class="line">        days = 30</span><br><span class="line">    elif month == 2:</span><br><span class="line">        if runYear(year):</span><br><span class="line">            days = 29</span><br><span class="line">        else:</span><br><span class="line">            days = 28</span><br><span class="line">    return days</span><br></pre></td></tr></table></figure></p>
-<p>#计算该日期本年总天数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def thisYearDays(year,month,day):</span><br><span class="line">    sum = 0</span><br><span class="line">    i = 1</span><br><span class="line">    while i &lt; month:</span><br><span class="line">        monthDay = getDays(year,month)</span><br><span class="line">        sum += monthDay</span><br><span class="line">        i += 1</span><br><span class="line">    return sum + day</span><br></pre></td></tr></table></figure></p>
-<p>最后将这两部分相加就是用户输入的日期距离2010年1月1日的总天数，然后将其对5取余，根据余数判断为“打鱼”还是“晒网”</p>
-<p>#计算距离输入日期的总天数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def allDays(year,month,day):</span><br><span class="line">    sum = 0</span><br><span class="line">    i = 2010</span><br><span class="line">    while i &lt; year:</span><br><span class="line">        if runYear(i):</span><br><span class="line">            sum += 366</span><br><span class="line">        else:</span><br><span class="line">            sum += 365</span><br><span class="line">        i += 1</span><br><span class="line">    s = thisYearDays(year,month,day)</span><br><span class="line">    sum += s</span><br><span class="line">    return sum</span><br></pre></td></tr></table></figure></p>
-<p>最后运行结果如下图所示:<br><img src="./images/三天打鱼两天晒网.png" alt="测试图"></p>
+      </h2>
 
-          
-        
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-09-01T08:08:23+08:00"
+              content="2018-09-01" >
+          09-01
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
       
+
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-      
 
   
 
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/14/测试图片/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JiangWen Fan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/lb.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="A Perfect man‘s WEB">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/14/测试图片/" itemprop="url">测试图片</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="发表于" itemprop="dateCreated datePublished" datetime="2018-08-14T23:57:19+08:00">
-                2018-08-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/08/14/测试图片/" class="leancloud_visitors" data-flag-title="测试图片">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>测试加载本地照片<br><img src="./images/kobe.png" alt="Kobe"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/31/Python3爬虫常见错误/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JiangWen Fan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/lb.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="A Perfect man‘s WEB">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/31/Python3爬虫常见错误/" itemprop="url">Python3爬虫常见错误</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="发表于" itemprop="dateCreated datePublished" datetime="2018-07-31T08:18:21+08:00">
-                2018-07-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/07/31/Python3爬虫常见错误/" class="leancloud_visitors" data-flag-title="Python3爬虫常见错误">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <pre><code>    Python3相比Python2有较大的改动，版主在之前没有接触过Python的情况下爬虫遇到了很多问题，
-现在就跟大家分享一下。在Python2中爬虫时候，我们通常导入urllib包就行了，但是在3中必须导入
-的是urllib.request如果你没有写.request的话，编译器将会报错。将会报错。urllib.request 模块
-提供了最基本的构造 HTTP 请求的方法，利用它可以模拟浏览器的一个请求发起过程，同时它还带有处
-理 authenticaton（授权验证），redirections（重定向），cookies (浏览器Cookies）以及其它内容。
-如果在Python3中使用的是urllib.urlopen 就是打开url网址的操作。编译器依旧会报错。因为在3中必
-须要urllib.request.urlopen这样来打开url网址。后面还要用到urlretrieve也一样，因为导入的包是
-urllib.request所以都要先在这里面调用这些函数！
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/30/XUST/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JiangWen Fan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/lb.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="A Perfect man‘s WEB">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/30/XUST/" itemprop="url">XUST</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="发表于" itemprop="dateCreated datePublished" datetime="2018-07-30T21:53:08+08:00">
-                2018-07-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Thinking/" itemprop="url" rel="index">
-                    <span itemprop="name">Thinking</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/07/30/XUST/" class="leancloud_visitors" data-flag-title="XUST">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这是我的第一篇博客 欢迎大家常来访问 范江稳是世界上最帅的男人</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
