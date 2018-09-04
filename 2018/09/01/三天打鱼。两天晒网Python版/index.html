@@ -87,12 +87,12 @@
 <meta property="og:site_name" content="A Perfect man‘s WEB">
 <meta property="og:description" content="使用Python实现">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/09/01/三天打鱼。两天晒网Python版/images/三天打鱼两天晒网.png">
-<meta property="og:updated_time" content="2018-09-01T04:08:46.316Z">
+<meta property="og:image" content="http://yoursite.com/2018/09/01/三天打鱼。两天晒网Python版/三天打鱼两天晒网.png">
+<meta property="og:updated_time" content="2018-09-04T09:00:26.077Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="三天打鱼。两天晒网Python版">
 <meta name="twitter:description" content="使用Python实现">
-<meta name="twitter:image" content="http://yoursite.com/2018/09/01/三天打鱼。两天晒网Python版/images/三天打鱼两天晒网.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/09/01/三天打鱼。两天晒网Python版/三天打鱼两天晒网.png">
 
 
 
@@ -397,7 +397,7 @@
 <p>#计算该日期本年总天数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def thisYearDays(year,month,day):</span><br><span class="line">    sum = 0</span><br><span class="line">    i = 1</span><br><span class="line">    while i &lt; month:</span><br><span class="line">        monthDay = getDays(year,month)</span><br><span class="line">        sum += monthDay</span><br><span class="line">        i += 1</span><br><span class="line">    return sum + day</span><br></pre></td></tr></table></figure></p>
 <p>最后将这两部分相加就是用户输入的日期距离2010年1月1日的总天数，然后将其对5取余，根据余数判断为“打鱼”还是“晒网”</p>
 <p>#计算距离输入日期的总天数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def allDays(year,month,day):</span><br><span class="line">    sum = 0</span><br><span class="line">    i = 2010</span><br><span class="line">    while i &lt; year:</span><br><span class="line">        if runYear(i):</span><br><span class="line">            sum += 366</span><br><span class="line">        else:</span><br><span class="line">            sum += 365</span><br><span class="line">        i += 1</span><br><span class="line">    s = thisYearDays(year,month,day)</span><br><span class="line">    sum += s</span><br><span class="line">    return sum</span><br></pre></td></tr></table></figure></p>
-<p>最后运行结果如下图所示:<br><img src="./images/三天打鱼两天晒网.png" alt="测试图"></p>
+<p>#最后运行结果如下图所示:<br><img src="/2018/09/01/三天打鱼。两天晒网Python版/三天打鱼两天晒网.png" alt="测试"></p>
 
       
     </div>
